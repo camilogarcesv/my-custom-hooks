@@ -4,15 +4,15 @@ How to use it
 <pre>
   <code>
     const Users = () => {
-    const [err, users, loading, refetch] = useFetch(`/api/users`, {auto:true});
+      const [err, users, loading, refetch] = useFetch(`/api/users`, {auto:true});
 
-    const onClick = () => refetch(...);
+      const onClick = () => refetch(...);
 
-    return (
-      <div>
-        {users.map((user) => <User key={user.id} user={user} />)}
-      </div>
-    );
-  }
+      return (
+        <div>
+          {users.map((user) => <User key={user.id} user={user} />)}
+        </div>
+      );
+    }
   </code>
 </pre>
